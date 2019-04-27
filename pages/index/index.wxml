@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<view class = "container">
+    <cover-image bindtap = "info" src = "../../image/logo.png" class = "logo"></cover-image>
+    <view class = "banner page-section page-section-spacing swiper">
+        <swiper class = "swiper-box"
+                indicator-dots = "{{indicatorDots}}"
+                autoplay = "{{autoplay}}"
+                interval = "{{interval}}"
+                duration = "{{duration}}"
+        >
+            <block wx:for = "{{imgUrls}}" wx:key = "*this">
+                <swiper-item>
+                    <image src = "{{item}}" class = "slide-image" width = "355" height = "150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class = "navbar">
+        <cover-image class = "nav nav1" src = "../../image/nav1.png"></cover-image>
+        <cover-image class = "nav nav2" src = "../../image/nav2.png"></cover-image>
+        <cover-image class = "nav nav3" src = "../../image/nav3.png"></cover-image>
+    </view>
+    <view class = "discuss">
+        <cover-image class = "taolunbg" src = "../../image/taolunbg.png"></cover-image>
+        <cover-image bindtap = "goDetail" class = "cytl tlin" src = "../../image/taolun-in.png"></cover-image>
+        <cover-image class = "cytl tlsend" src = "../../image/taolun-send.png"></cover-image>
+    </view>
+    <view class = "yczr">
+        <view class = "ychead">
+            <cover-image class = "ycicon" src = "../../image/yczr-icon.png"></cover-image>
+            <view class = "seemore1">
+                <text>查看全部</text>
+                <cover-image class = "sj" src = "../../image/seemore.png"></cover-image>
+            </view>
+        </view>
+        <scroll-view class = "scroll-view1" scroll-x = "true">
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people1.jpg"></image>
+                    <tetx class = "pname">李 健</tetx>
+                </view>
+            </view>
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people2.jpg"></image>
+                    <tetx class = "pname">陈绮贞</tetx>
+                </view>
+            </view>
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people3.jpg"></image>
+                    <tetx class = "pname">郭 顶</tetx>
+                </view>
+            </view>
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people4.jpg"></image>
+                    <tetx class = "pname">李 健</tetx>
+                </view>
+            </view>
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people1.jpg"></image>
+                    <tetx class = "pname">万能青</tetx>
+                </view>
+            </view>
+            <view class = "yczrlist">
+                <view class = "lstmain">
+                    <image class = "people" src = "../../image/people2.jpg"></image>
+                    <tetx class = "pname">李 健</tetx>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class = "yczx">
+        <view class = "ychead">
+            <cover-image class = "ycicon" src = "../../image/yczx-icon.png"></cover-image>
+            <view class = "seemore2">
+                <text>查看全部</text>
+                <cover-image class = "sj" src = "../../image/seemore.png"></cover-image>
+            </view>
+        </view>
+        <scroll-view class = "scroll-view2" scroll-y = "true">
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttlintime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+            <view class = "yczxlist">
+                <image src = "../../image/zixunimgs.jpg" class = "zixunimg" alt = ""></image>
+                <text class = "btitle">2019氧气音乐节宣传短视频，带你进入春日的杭州。</text>
+                <text class = "ttime">2019-04-03</text>
+                <text class = "bdetail"> 又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节，我们在杭城等你。又是一年氧气音乐节节..</text>
+            </view>
+        </scroll-view>
+    </view>
+</view>

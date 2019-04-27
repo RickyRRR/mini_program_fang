@@ -1,0 +1,7 @@
+<!--pages/tldetail.wxml-->
+<view class = "container log-list">
+    <block>
+        <text>This is a detail Test And ID is {{pageId}}</text>
+    </block>
+</view>
+

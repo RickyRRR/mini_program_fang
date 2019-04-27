@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/second/second",
+    "pages/index/index",
+    "pages/third/third",
+    "pages/fourth/fourth",
+    "pages/tldetail/tldetail"
+  ],
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon1.png",
+        "selectedIconPath": "image/icon1active.png",
+        "text": "首页",
+        "navigationBarTitleText": "首页"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "iconPath": "image/icon2.png",
+        "selectedIconPath": "image/icon2active.png",
+        "text": "演出阵容",
+        "navigationBarTitleText": "演出阵容"
+      },
+      {
+        "pagePath": "pages/third/third",
+        "iconPath": "image/icon3.png",
+        "selectedIconPath": "image/icon3active.png",
+        "text": "图文直播",
+        "navigationBarTitleText": "图文直播"
+      },
+      {
+        "pagePath": "pages/fourth/fourth",
+        "iconPath": "image/icon4.png",
+        "selectedIconPath": "image/icon4active.png",
+        "text": "时间表",
+        "navigationBarTitleText": "时间表"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
