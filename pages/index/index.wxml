@@ -1,4 +1,4 @@
-<!--index.wxml-->
+index.wxmlwxml-->
 <view class = "container">
     <cover-image bindtap = "info" src = "../../image/logo.png" class = "logo"></cover-image>
     <view class = "banner page-section page-section-spacing swiper">

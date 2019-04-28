@@ -1,4 +1,4 @@
-<!--index.wxml-->
+
 <view class = "container">
     <!--<cover-image bindtap = "info" src = "../../image/logo.png" class = "logo"></cover-image>-->
     <view class = "banner page-section page-section-spacing swiper">
@@ -16,8 +16,26 @@
         </swiper>
     </view>
     <view class="section">
-        <view class="section__title">你输入的是：{{inputValue}}</view>
-        <input bindinput="bindKeyInput" placeholder="输入同步到view中" />
+        <view class="section__title">普通选择器</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+                当前选择：{{array[index]}}
+            </view>
+        </picker>
+    </view>
+    <view class="section">
+        <view class="section__title">你输入的是：{{productHref}}</view>
+        <input bindinput="productHrefInput" placeholder="输入商品编号" style="height: 35px;padding: 10px;border:1px solid #c7c7c7;margin:5px" />
+    </view>
+    <view>
+        <button  bindtap="queryPrice" style="width:120px;background:orangered;margin-right: 10px;display:inline-block">查询</button>
+        <button style="width:100px;background:greenyellow;display: inline-block;">收藏</button>
+    </view>
+
+
+
+    <view class="container" style="width: 300px;height:200px">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
     </view>
    <!-- <view class = "navbar">
         <cover-image class = "nav nav1" src = "../../image/nav1.png"></cover-image>
