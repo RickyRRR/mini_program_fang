@@ -1,6 +1,82 @@
-<!--fourth.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class = "container">
+  <view class = "zrblk" style = 'height:{{areaHeight0}}rpx'>
+    <view class = "zrhead">
+      <view class = 'zrnav zrnav1 {{currentData===0?"navActive":""}}'>
+        <text bindtap = "slide" data-current = "0">全 部</text>
+        <image class = "zractivebar" src = "../../image/activebar.jpg" alt = ""></image>
+      </view>
+      <view bindtap = "slide" class = 'zrnav zrnav2 {{currentData===1?"navActive":""}}'>
+        <text bindtap = "slide" data-current = "1">热点</text>
+        <image class = "zractivebar" src = "../../image/activebar.jpg" alt = ""></image>
+      </view>
+      <view bindtap = "slide" class = 'zrnav zrnav3 {{currentData===2?"navActive":""}}'>
+        <text bindtap = "slide" data-current = "2">5.25</text>
+        <image class = "zractivebar" src = "../../image/activebar.jpg" alt = ""></image>
+      </view>
+      <view bindtap = "slide" class = 'zrnav zrnav4 {{currentData===3?"navActive":""}}'>
+        <text bindtap = "slide" data-current = "3">5.26</text>
+        <image class = "zractivebar" src = "../../image/activebar.jpg" alt = ""></image>
+      </view>
+    </view>
+    <view class = "zrbody" style = 'height:{{areaHeight?areaHeight:1100}}rpx'>
+      <swiper
+              class = "swiper-box"
+              indicator-dots = "{{indicatorDots}}"
+              autoplay = "{{autoplay}}"
+              interval = "{{interval}}"
+              duration = "{{duration}}"
+              current = "{{currentData}}"
+              bindchange = "bindchange"
+      >
+        <swiper-item>
+          <scroll-view scroll-y = "true" style = 'height:{{areaHeight?areaHeight:1100}}rpx'>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+          </scroll-view>
+        </swiper-item>
+        <swiper-item>
+          <scroll-view scroll-y = "true" style = 'height:{{areaHeight?areaHeight:1100}}rpx'>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+          </scroll-view>
+        </swiper-item>
+        <swiper-item>
+          <scroll-view scroll-y = "true" style = 'height:{{areaHeight?areaHeight:1100}}rpx'>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+          </scroll-view>
+        </swiper-item>
+        <swiper-item>
+          <scroll-view scroll-y = "true" style = 'height:{{areaHeight?areaHeight:1100}}rpx'>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+            <view class = "twblks"></view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
 </view>

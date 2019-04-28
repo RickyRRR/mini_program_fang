@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.5.0",
-	"appid": "touristappid",
-	"projectname": "%E8%87%AA%E5%AE%9A%E4%B9%89%20tabBar",
+	"appid": "wx32c1592049a80f89",
+	"projectname": "Music",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

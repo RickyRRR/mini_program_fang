@@ -1,36 +1,31 @@
 /**index.wxss**/
 .logo {
-    width: 210rpx;
-    height: 139rpx;
-    display: block;
-    margin: 0 auto;
+	width   : 210rpx;
+	height  : 139rpx;
+	display : block;
+	margin  : 0 auto;
 }
-
 .banner {
-    width: 708rpx;
-    height: 217rpx;
-    display: block;
-    margin: 0 auto;
-    margin-top: 46rpx;
-    /*background: chartreuse;*/
-    position: relative;
-    border-radius: 10rpx;
-    -webkit--border-radius: 10rpx;
+	width                  : 708rpx;
+	height                 : 217rpx;
+	display                : block;
+	margin                 : 0 auto;
+	margin-top             : 46rpx;
+	position               : relative;
+	border-radius          : 10rpx;
+	-webkit--border-radius : 10rpx;
 }
-
 swiper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+	position : absolute;
+	width    : 100%;
+	height   : 100%;
+	left     : 0;
+	top      : 0;
 }
-
 .slide-image {
-    width: 100%;
-    height: 100%;
+	width  : 100%;
+	height : 100%;
 }
-
 /*
 .swiper-box .wx-swiper-dot {
     width: 20rpx;
@@ -54,239 +49,204 @@ swiper {
     background-size: 100% 100%;
 }*/
 .navbar {
-    width: 708rpx;
-    height: 55rpx;
-    display: block;
-    margin: 0 auto;
-    margin-top: 46rpx;
-    background: white;
-
+	width      : 708rpx;
+	height     : 55rpx;
+	display    : block;
+	margin     : 0 auto;
+	margin-top : 46rpx;
+	background : white;
 }
-
 .nav {
-    width: 163rpx;
-    height: 55rpx;
-    display: block;
-    float: left;
+	width   : 163rpx;
+	height  : 55rpx;
+	display : block;
+	float   : left;
 }
-
 .nav {
-    margin-left: 54.5rpx;
+	margin-left : 54.5rpx;
 }
-
 .discuss {
-    width: 708rpx;
-    height: 100rpx;
-    margin-top: 42rpx;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 42rpx;
-
+	width      : 708rpx;
+	height     : 100rpx;
+	margin-top : 42rpx;
+	position   : relative;
+	margin     : 0 auto;
+	margin-top : 42rpx;
 }
-
 .taolunbg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
+	width    : 100%;
+	height   : 100%;
+	position : absolute;
+	left     : 0;
+	top      : 0;
+	z-index  : 1;
 }
-
 .cytl {
-    width: 162rpx;
-    height: 48rpx;
-    display: block;
-    position: absolute;
-    z-index: 2;
+	width    : 162rpx;
+	height   : 48rpx;
+	display  : block;
+	position : absolute;
+	z-index  : 2;
 }
-
 .tlin {
-    left: 162rpx;
-    top: 26rpx;
+	left : 162rpx;
+	top  : 26rpx;
 }
-
 .tlsend {
-    right: 162rpx;
-    top: 26rpx;
+	right : 162rpx;
+	top   : 26rpx;
 }
-
 .yczr {
-    width: 708rpx;
-    height: 316rpx;
-    display: block;
-    margin: 0 auto;
-    margin-top: 42rpx;
-    position: relative;
-    /*background: black;*/
+	width      : 708rpx;
+	height     : 316rpx;
+	display    : block;
+	margin     : 0 auto;
+	margin-top : 42rpx;
+	position   : relative;
 }
-
 .ychead {
-    width: 100%;
-    height: 52rpx;
-    position: relative;
-
+	width    : 100%;
+	height   : 52rpx;
+	position : relative;
 }
-
 .ycicon {
-    width: 170rpx;
-    display: block;
-    margin: 0 auto;
+	width   : 170rpx;
+	display : block;
+	margin  : 0 auto;
 }
-
 .seemore1, .seemore2 {
-    width: 126rpx;
-    height: 52rpx;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    text-align: left;
-    line-height: 52rpx;
-    color: #c7c7c7;
-    font-size: 19rpx;
+	width       : 126rpx;
+	height      : 52rpx;
+	position    : absolute;
+	top         : 0;
+	right       : 0;
+	z-index     : 10;
+	text-align  : left;
+	line-height : 52rpx;
+	color       : #c7c7c7;
+	font-size   : 19rpx;
 }
-
 .sj {
-    width: 13rpx;
-    height: 17rpx;
-    position: absolute;
-    top: 17.5rpx;
-    left: 88rpx;
+	width    : 13rpx;
+	height   : 17rpx;
+	position : absolute;
+	top      : 17.5rpx;
+	left     : 88rpx;
 }
-
 .scroll-view1 {
-    width: 708rpx;
-    height: 220rpx;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-
+	width       : 708rpx;
+	height      : 220rpx;
+	position    : absolute;
+	left        : 0;
+	bottom      : 0;
+	overflow    : hidden;
+	white-space : nowrap;
+	display     : inline-block;
 }
-
 .yczrlist {
-    width: 213rpx;
-    height: 220rpx;
-    display: inline-block;
-
-    position: relative;
+	width    : 213rpx;
+	height   : 220rpx;
+	display  : inline-block;
+	position : relative;
 }
-
 .lstmain {
-    width: 200rpx;
-    height: 204rpx;
-    background: white;
-    border-bottom-left-radius: 10rpx;
-    -webkit-border-bottom-left-radius: 10rpx;
-    border-bottom-right-radius: 10rpx;
-    -webkit-border-bottom-right-radius: 10rpx;
-    box-shadow: 2rpx 2rpx 15rpx 5rpx rgba(178, 178, 178, 0.4);
-    -webkit-box-shadow: 2rpx 2rpx 15rpx 5rpx rgba(178, 178, 178, 0.4);
-    position: absolute;
-    left: 0;
-    top: 0;
+	width                              : 200rpx;
+	height                             : 204rpx;
+	background                         : white;
+	border-bottom-left-radius          : 10rpx;
+	-webkit-border-bottom-left-radius  : 10rpx;
+	border-bottom-right-radius         : 10rpx;
+	-webkit-border-bottom-right-radius : 10rpx;
+	box-shadow                         : 2rpx 2rpx 15rpx 5rpx rgba(178, 178, 178, 0.4);
+	-webkit-box-shadow                 : 2rpx 2rpx 15rpx 5rpx rgba(178, 178, 178, 0.4);
+	position                           : absolute;
+	left                               : 0;
+	top                                : 0;
 }
-
 .people {
-    width: 200rpx;
-    height: 147rpx;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
+	width    : 200rpx;
+	height   : 147rpx;
+	display  : block;
+	position : absolute;
+	left     : 0;
+	top      : 0;
 }
-
 .pname {
-    width: 200rpx;
-    height: 56rpx;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 147rpx;
-    text-align: center;
-    line-height: 56rpx;
-    color: black;
-    font-size: 23rpx;
-    overflow: hidden;
-
+	width       : 200rpx;
+	height      : 56rpx;
+	display     : block;
+	position    : absolute;
+	left        : 0;
+	top         : 147rpx;
+	text-align  : center;
+	line-height : 56rpx;
+	color       : black;
+	font-size   : 23rpx;
+	overflow    : hidden;
 }
-
 .yczx {
-    width: 708rpx;
-    height: 1000rpx;
-    display: block;
-    margin: 0 auto;
-    margin-top: 32rpx;
-    position: relative;
-    margin-top: 32rpx;
-    overflow: hidden;
-    position: relative;
-
+	width      : 708rpx;
+	height     : 1000rpx;
+	display    : block;
+	margin     : 0 auto;
+	margin-top : 32rpx;
+	position   : relative;
+	margin-top : 32rpx;
+	overflow   : hidden;
+	position   : relative;
 }
-
 .scroll-view2 {
-    width: 670rpx;
-    height: 800rpx;
-    /*background: rgba(0, 0, 0, 0.07);*/
-    display: block;
-    margin: 0 auto;
-    margin-top: 42rpx;
-
+	width      : 670rpx;
+	height     : 800rpx;
+	display    : block;
+	margin     : 0 auto;
+	margin-top : 42rpx;
 }
-
 .yczxlist {
-    width: 670rpx;
-    height: 260rpx;
-    display: block;
-    margin-bottom: 10rpx;
-    box-sizing: border-box;
-    border-radius: 10rpx;
-    -webkit-rder-radius: 10rpx;
-    position: relative;
+	width               : 670rpx;
+	height              : 260rpx;
+	display             : block;
+	margin-bottom       : 10rpx;
+	box-sizing          : border-box;
+	border-radius       : 10rpx;
+	-webkit-rder-radius : 10rpx;
+	position            : relative;
 }
-
 .zixunimg {
-    position: absolute;
-    width: 305rpx;
-    height: 260rpx;
-    left: 0;
-    top: 0;
+	position : absolute;
+	width    : 305rpx;
+	height   : 260rpx;
+	left     : 0;
+	top      : 0;
 }
-
 .btitle {
-    width: 300rpx;
-    height: 54rpx;
-    position: absolute;
-    left: 335rpx;
-    top: 39rpx;
-    color: #333333;
-    font-size: 22rpx;
-    text-align: justify;
-    line-height: 33rpx;
+	width       : 300rpx;
+	height      : 54rpx;
+	position    : absolute;
+	left        : 335rpx;
+	top         : 39rpx;
+	color       : #333333;
+	font-size   : 22rpx;
+	text-align  : justify;
+	line-height : 33rpx;
 }
-
 .ttime {
-    width: 100rpx;
-    height: 20rpx;
-    position: absolute;
-    left: 335rpx;
-    top: 109rpx;
-    font-size: 16rpx;
-    color: #cecece;
-
+	width     : 100rpx;
+	height    : 20rpx;
+	position  : absolute;
+	left      : 335rpx;
+	top       : 109rpx;
+	font-size : 16rpx;
+	color     : #cecece;
 }
-
 .bdetail {
-    width: 300rpx;
-    height: 72rpx;
-    position: absolute;
-    left: 335rpx;
-    top: 150rpx;
-    color: #949494;
-    font-size: 16rpx;
-    text-align: justify;
-    line-height: 27rpx;
+	width       : 300rpx;
+	height      : 72rpx;
+	position    : absolute;
+	left        : 335rpx;
+	top         : 150rpx;
+	color       : #949494;
+	font-size   : 16rpx;
+	text-align  : justify;
+	line-height : 27rpx;
 }

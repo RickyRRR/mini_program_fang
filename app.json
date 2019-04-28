@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/second/second",
-    "pages/index/index",
     "pages/third/third",
+    "pages/index/index",
+    "pages/second/second",
     "pages/fourth/fourth",
     "pages/tldetail/tldetail"
   ],
