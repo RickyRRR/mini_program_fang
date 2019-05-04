@@ -1,6 +1,7 @@
 //index.js
-//获取应用实例
+//获取应用实例  adf
 const app = getApp()
+import * as echarts from '../../ec-canvas/echarts' ;
 function initChart(canvas, width, height) {
     const chart = echarts.init(canvas, null, {
         width: width,
@@ -202,6 +203,7 @@ Page({
         })
     },
     queryPrice:function (e){
+
         console.log(this.data.productHref)
         wx.request({
             url: 'https://www.peapocket.com/historyprice',

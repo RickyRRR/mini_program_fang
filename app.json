@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/second/second",
     "pages/fourth/fourth",
-    "pages/tldetail/tldetail"
+    "pages/tldetail/tldetail",
+    "pages/history/history"
   ],
   "tabBar": {
     "color": "#333333",
@@ -12,7 +13,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/history/history",
         "iconPath": "image/icon1.png",
         "selectedIconPath": "image/icon1active.png",
         "text": "首页",
