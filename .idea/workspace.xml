@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b3f8fff-7c8f-4e3d-b68c-27f69ed73958" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/musicFestival.iml" afterPath="$PROJECT_DIR$/.idea/musicFestival.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="6b3f8fff-7c8f-4e3d-b68c-27f69ed73958" name="Default" comment="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ec-canvas/ec-canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ec-canvas/ec-canvas.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ec-canvas/ec-canvas.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ec-canvas/ec-canvas.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ec-canvas/wx-canvas.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/history/history.js" afterPath="$PROJECT_DIR$/pages/history/history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/history/history.json" afterPath="$PROJECT_DIR$/pages/history/history.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/history/history.wxml" afterPath="$PROJECT_DIR$/pages/history/history.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.wxml" afterPath="$PROJECT_DIR$/pages/index/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,107 +26,59 @@
       <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.wxss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.wxss">
+      <file leaf-file-name="abouthouse.wxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitemap.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sitemap.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="history.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/history/history.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5278">
-              <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1556458247493" expanded="true" signature="135:3013" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="182:234" ph="{&quot;width&quot;: width...}" />
-                <marker date="1556458247493" expanded="true" signature="283:2963" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="352:558" ph="{&quot;trigger&quot;: 'axis'...}" />
-                <marker date="1556458247493" expanded="true" signature="408:521" ph="{&quot;type&quot;: 'shadow'...}" />
-                <marker date="1556458247493" expanded="true" signature="576:624" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="640:772" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="789:1080" ph="[...]" />
-                <marker date="1556458247493" expanded="true" signature="803:1070" ph="{&quot;type&quot;: 'value'...}" />
-                <marker date="1556458247493" expanded="true" signature="862:974" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="895:956" ph="{&quot;color&quot;: '##999'...}" />
-                <marker date="1556458247493" expanded="true" signature="1003:1056" ph="{&quot;color&quot;: '##666'...}" />
-                <marker date="1556458247493" expanded="true" signature="1097:1508" ph="[...]" />
-                <marker date="1556458247493" expanded="true" signature="1111:1498" ph="{&quot;type&quot;: 'category'...}" />
-                <marker date="1556458247493" expanded="true" signature="1290:1402" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="1323:1384" ph="{&quot;color&quot;: '##999'...}" />
-                <marker date="1556458247493" expanded="true" signature="1431:1484" ph="{&quot;color&quot;: '##666'...}" />
-                <marker date="1556458247493" expanded="true" signature="1526:2957" ph="[...]" />
-                <marker date="1556458247493" expanded="true" signature="1540:1995" ph="{&quot;name&quot;: '热度'...}" />
-                <marker date="1556458247493" expanded="true" signature="1622:1772" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="1652:1754" ph="{&quot;position&quot;: 'inside'...}" />
-                <marker date="1556458247493" expanded="true" signature="1860:1981" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="1882:1963" ph="//..." />
-                <marker date="1556458247493" expanded="true" signature="2009:2449" ph="{&quot;name&quot;: '正面'...}" />
-                <marker date="1556458247493" expanded="true" signature="2120:2226" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="2150:2208" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="2314:2435" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="2336:2417" ph="//..." />
-                <marker date="1556458247493" expanded="true" signature="2463:2947" ph="{&quot;name&quot;: '负面'...}" />
-                <marker date="1556458247493" expanded="true" signature="2574:2722" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="2604:2704" ph="{&quot;position&quot;: 'left'...}" />
-                <marker date="1556458247493" expanded="true" signature="2812:2933" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="2834:2915" ph="//..." />
-                <marker date="1556458247493" expanded="true" signature="3019:6012" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="3031:3792" ph="{&quot;productHref&quot;: ''...}" />
-                <marker date="1556458247493" expanded="true" signature="3045:3086" ph="{&quot;onInit&quot;: initChart...}" />
-                <marker date="1556458247493" expanded="true" signature="3172:3423" ph="[...]" />
-                <marker date="1556458247493" expanded="true" signature="3186:3251" ph="{&quot;id&quot;: 0...}" />
-                <marker date="1556458247493" expanded="true" signature="3265:3332" ph="{&quot;id&quot;: 1...}" />
-                <marker date="1556458247493" expanded="true" signature="3346:3413" ph="{&quot;id&quot;: 2...}" />
-                <marker date="1556458247493" expanded="true" signature="3460:3585" ph="[...]" />
-                <marker date="1556458247493" expanded="true" signature="3834:4027" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4071:4164" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4094:4157" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4203:4286" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4226:4279" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4325:4403" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4348:4396" ph="{&quot;interval&quot;: e.detail.value...}" />
-                <marker date="1556458247493" expanded="true" signature="4442:4520" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4465:4513" ph="{&quot;duration&quot;: e.detail.value...}" />
-                <marker date="1556458247493" expanded="true" signature="4547:4672" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4571:4665" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4729:4810" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4752:4803" ph="{&quot;productHref&quot;: e.detail.value...}" />
-                <marker date="1556458247493" expanded="true" signature="4832:4912" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="4855:4905" ph="{&quot;inputValue&quot;: e.detail.value...}" />
-                <marker date="1556458247493" expanded="true" signature="4938:5070" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5018:5063" ph="{&quot;index&quot;: e.detail.value...}" />
-                <marker date="1556458247493" expanded="true" signature="5099:6006" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5164:5999" ph="{&quot;url&quot;: 'https://www.peapocket.com/historyprice'...}" />
-                <marker date="1556458247493" expanded="true" signature="5413:5496" ph="{&quot;content-type&quot;: 'application/x-www-form-urlencoded'...}" />
-                <marker date="1556458247493" expanded="true" signature="5549:5792" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5594:5655" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5661:5778" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5824:5910" ph="{...}" />
-                <marker date="1556458247493" expanded="true" signature="5946:5989" ph="{...}" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="echarts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ec-canvas/echarts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/history/history.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abouthouse.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,14 +86,23 @@
       <file leaf-file-name="history.wxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.wxss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.wxss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -162,8 +115,8 @@
       <file leaf-file-name="project.config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -171,12 +124,22 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>weekD</find>
+      <find>pickc</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/pages/history/history.wxml" />
+        <option value="$PROJECT_DIR$/project.config.json" />
+        <option value="$PROJECT_DIR$/pages/history/history.json" />
         <option value="$PROJECT_DIR$/pages/history/history.js" />
       </list>
     </option>
@@ -194,10 +157,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="1358" />
+    <option name="y" value="-166" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -303,6 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,16 +328,22 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fangadmin" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\VueProjects\mini programe\musicFestival\ec-canvas" />
+      <recent name="D:\personal\VueProjects\mini programe\musicFestival" />
+      <recent name="D:\personal\VueProjects\mini programe\musicFestival\pages\abouthouse" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -426,6 +396,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -461,24 +437,49 @@
       <updated>1556457433203</updated>
       <workItem from="1556457434655" duration="300000" />
       <workItem from="1556459188054" duration="122000" />
+      <workItem from="1556505071446" duration="5966000" />
+      <workItem from="1556521546777" duration="5777000" />
+      <workItem from="1556968609920" duration="563000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js">
+      <created>1556969085507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556969085507</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang">
+      <created>1556969154754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556969154754</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js">
+      <created>1556969169467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556969169467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422000" />
+    <option name="totallyTimeSpent" value="12728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="1358" y="-166" width="1936" height="1096" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -494,6 +495,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -501,6 +507,166 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-canvas/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4392">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -511,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -519,83 +684,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/history/history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5278">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1556458247493" expanded="true" signature="135:3013" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="182:234" ph="{&quot;width&quot;: width...}" />
-            <marker date="1556458247493" expanded="true" signature="283:2963" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="352:558" ph="{&quot;trigger&quot;: 'axis'...}" />
-            <marker date="1556458247493" expanded="true" signature="408:521" ph="{&quot;type&quot;: 'shadow'...}" />
-            <marker date="1556458247493" expanded="true" signature="576:624" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="640:772" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="789:1080" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="803:1070" ph="{&quot;type&quot;: 'value'...}" />
-            <marker date="1556458247493" expanded="true" signature="862:974" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="895:956" ph="{&quot;color&quot;: '##999'...}" />
-            <marker date="1556458247493" expanded="true" signature="1003:1056" ph="{&quot;color&quot;: '##666'...}" />
-            <marker date="1556458247493" expanded="true" signature="1097:1508" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="1111:1498" ph="{&quot;type&quot;: 'category'...}" />
-            <marker date="1556458247493" expanded="true" signature="1290:1402" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1323:1384" ph="{&quot;color&quot;: '##999'...}" />
-            <marker date="1556458247493" expanded="true" signature="1431:1484" ph="{&quot;color&quot;: '##666'...}" />
-            <marker date="1556458247493" expanded="true" signature="1526:2957" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="1540:1995" ph="{&quot;name&quot;: '热度'...}" />
-            <marker date="1556458247493" expanded="true" signature="1622:1772" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1652:1754" ph="{&quot;position&quot;: 'inside'...}" />
-            <marker date="1556458247493" expanded="true" signature="1860:1981" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1882:1963" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="2009:2449" ph="{&quot;name&quot;: '正面'...}" />
-            <marker date="1556458247493" expanded="true" signature="2120:2226" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2150:2208" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2314:2435" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2336:2417" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="2463:2947" ph="{&quot;name&quot;: '负面'...}" />
-            <marker date="1556458247493" expanded="true" signature="2574:2722" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2604:2704" ph="{&quot;position&quot;: 'left'...}" />
-            <marker date="1556458247493" expanded="true" signature="2812:2933" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2834:2915" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="3019:6012" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="3031:3792" ph="{&quot;productHref&quot;: ''...}" />
-            <marker date="1556458247493" expanded="true" signature="3045:3086" ph="{&quot;onInit&quot;: initChart...}" />
-            <marker date="1556458247493" expanded="true" signature="3172:3423" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="3186:3251" ph="{&quot;id&quot;: 0...}" />
-            <marker date="1556458247493" expanded="true" signature="3265:3332" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1556458247493" expanded="true" signature="3346:3413" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1556458247493" expanded="true" signature="3460:3585" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="3834:4027" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4071:4164" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4094:4157" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4203:4286" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4226:4279" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4325:4403" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4348:4396" ph="{&quot;interval&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4442:4520" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4465:4513" ph="{&quot;duration&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4547:4672" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4571:4665" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4729:4810" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4752:4803" ph="{&quot;productHref&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4832:4912" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4855:4905" ph="{&quot;inputValue&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4938:5070" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5018:5063" ph="{&quot;index&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="5099:6006" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5164:5999" ph="{&quot;url&quot;: 'https://www.peapocket.com/historyprice'...}" />
-            <marker date="1556458247493" expanded="true" signature="5413:5496" ph="{&quot;content-type&quot;: 'application/x-www-form-urlencoded'...}" />
-            <marker date="1556458247493" expanded="true" signature="5549:5792" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5594:5655" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5661:5778" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5824:5910" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5946:5989" ph="{...}" />
-          </folding>
+        <state relative-caret-position="4920">
+          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +699,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,7 +740,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5278">
+          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -647,7 +783,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sitemap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/abouthouse/abouthouse.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#picker#0;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#view#2;n#view#1;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-canvas/ec-canvas.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-canvas/ec-canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-canvas/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="345597" lean-forward="false" selection-start-line="21" selection-start-column="345597" selection-end-line="21" selection-end-column="345597" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-canvas/echarts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -657,92 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/history/history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5278">
-          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1556458247493" expanded="true" signature="135:3013" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="182:234" ph="{&quot;width&quot;: width...}" />
-            <marker date="1556458247493" expanded="true" signature="283:2963" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="352:558" ph="{&quot;trigger&quot;: 'axis'...}" />
-            <marker date="1556458247493" expanded="true" signature="408:521" ph="{&quot;type&quot;: 'shadow'...}" />
-            <marker date="1556458247493" expanded="true" signature="576:624" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="640:772" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="789:1080" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="803:1070" ph="{&quot;type&quot;: 'value'...}" />
-            <marker date="1556458247493" expanded="true" signature="862:974" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="895:956" ph="{&quot;color&quot;: '##999'...}" />
-            <marker date="1556458247493" expanded="true" signature="1003:1056" ph="{&quot;color&quot;: '##666'...}" />
-            <marker date="1556458247493" expanded="true" signature="1097:1508" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="1111:1498" ph="{&quot;type&quot;: 'category'...}" />
-            <marker date="1556458247493" expanded="true" signature="1290:1402" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1323:1384" ph="{&quot;color&quot;: '##999'...}" />
-            <marker date="1556458247493" expanded="true" signature="1431:1484" ph="{&quot;color&quot;: '##666'...}" />
-            <marker date="1556458247493" expanded="true" signature="1526:2957" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="1540:1995" ph="{&quot;name&quot;: '热度'...}" />
-            <marker date="1556458247493" expanded="true" signature="1622:1772" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1652:1754" ph="{&quot;position&quot;: 'inside'...}" />
-            <marker date="1556458247493" expanded="true" signature="1860:1981" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="1882:1963" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="2009:2449" ph="{&quot;name&quot;: '正面'...}" />
-            <marker date="1556458247493" expanded="true" signature="2120:2226" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2150:2208" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2314:2435" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2336:2417" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="2463:2947" ph="{&quot;name&quot;: '负面'...}" />
-            <marker date="1556458247493" expanded="true" signature="2574:2722" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2604:2704" ph="{&quot;position&quot;: 'left'...}" />
-            <marker date="1556458247493" expanded="true" signature="2812:2933" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="2834:2915" ph="//..." />
-            <marker date="1556458247493" expanded="true" signature="3019:6012" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="3031:3792" ph="{&quot;productHref&quot;: ''...}" />
-            <marker date="1556458247493" expanded="true" signature="3045:3086" ph="{&quot;onInit&quot;: initChart...}" />
-            <marker date="1556458247493" expanded="true" signature="3172:3423" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="3186:3251" ph="{&quot;id&quot;: 0...}" />
-            <marker date="1556458247493" expanded="true" signature="3265:3332" ph="{&quot;id&quot;: 1...}" />
-            <marker date="1556458247493" expanded="true" signature="3346:3413" ph="{&quot;id&quot;: 2...}" />
-            <marker date="1556458247493" expanded="true" signature="3460:3585" ph="[...]" />
-            <marker date="1556458247493" expanded="true" signature="3834:4027" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4071:4164" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4094:4157" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4203:4286" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4226:4279" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4325:4403" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4348:4396" ph="{&quot;interval&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4442:4520" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4465:4513" ph="{&quot;duration&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4547:4672" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4571:4665" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4729:4810" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4752:4803" ph="{&quot;productHref&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4832:4912" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="4855:4905" ph="{&quot;inputValue&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="4938:5070" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5018:5063" ph="{&quot;index&quot;: e.detail.value...}" />
-            <marker date="1556458247493" expanded="true" signature="5099:6006" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5164:5999" ph="{&quot;url&quot;: 'https://www.peapocket.com/historyprice'...}" />
-            <marker date="1556458247493" expanded="true" signature="5413:5496" ph="{&quot;content-type&quot;: 'application/x-www-form-urlencoded'...}" />
-            <marker date="1556458247493" expanded="true" signature="5549:5792" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5594:5655" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5661:5778" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5824:5910" ph="{...}" />
-            <marker date="1556458247493" expanded="true" signature="5946:5989" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/history/history.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding />
         </state>
       </provider>
