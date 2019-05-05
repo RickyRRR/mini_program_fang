@@ -7,7 +7,8 @@
     "pages/fourth/fourth",
     "pages/tldetail/tldetail",
 
-    "pages/abouthouse/abouthouse"
+    "pages/abouthouse/abouthouse" ,
+    "pages/nodetail/nodetail"
   ],
   "tabBar": {
     "color": "#333333",

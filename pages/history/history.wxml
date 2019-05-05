@@ -17,22 +17,25 @@
     </view>
 
     <view style="padding:15px">
-        <view class="section">
-
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="font-weight: bold;">
+        <view class="section" style="font-weight: bold;">
+            数据来源：
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="font-weight: bold;display: inline-block;width:20%">
                 <view class="picker">
-                    数据来源：{{array[index]}}
+                    {{array[index]}}
                 </view>
             </picker>
+            >
         </view>
         <view class="section" style="margin:15px 0">
-            <view class="section__title" style="font-weight: bold;">房源编号</view>
+            <view class="section__title" style="font-weight: bold;">房源编号
+                <text bindtap="NoDetail" style="font-weight: normal;color:green;font-size:14px">（编号说明）</text>
+            </view>
             <input bindinput="productHrefInput" placeholder="输入房源编号" value="103102793936"
                    style="height: 50px;padding-left: 10px;border:1px solid #c7c7c7;margin-top:5px;"/>
         </view>
         <view style="text-align: center">
             <button bindtap="queryPrice"
-                    style="width:120px;background:orangered;margin-right: 10px;display:inline-block">查询
+                    style="width:120px;background:#5dbec3;margin-right: 10px;display:inline-block">查询
             </button>
             <!--<button style="width:100px;background:greenyellow;display: inline-block;">收藏</button>-->
         </view>

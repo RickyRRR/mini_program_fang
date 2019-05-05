@@ -80,7 +80,7 @@ Page({
 
     NoDetail: function (){
         wx.navigateTo({
-            url: '../nodetail/nodetail'
+            url: '../tldetail/tldetail' + "?id=" + Math.floor(Math.random() * 100)
         })
     },
     //获取用户输入的用户名

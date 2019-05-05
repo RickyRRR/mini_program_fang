@@ -1,0 +1,30 @@
+
+<view class = "container">
+    <!--<cover-image bindtap = "info" src = "../../image/logo.png" class = "logo"></cover-image>-->
+    <view class = "banner page-section page-section-spacing swiper">
+        <swiper class = "swiper-box"
+                indicator-dots = "{{indicatorDots}}"
+                autoplay = "{{autoplay}}"
+                interval = "{{interval}}"
+                duration = "{{duration}}"
+        >
+            <block wx:for = "{{imgUrls}}" wx:key = "*this">
+                <swiper-item>
+                    <image src = "{{item}}" class = "slide-image" width = "355" height = "150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view style="padding:15px">
+        <view>
+            1.如何获取房源编号？
+            <view>
+                答:打开链家app,在二手房的某套房子界面，点击其他，链家编号的那串数字就是房源编号。
+            </view>
+
+        </view>
+
+
+    </view>
+</view>
