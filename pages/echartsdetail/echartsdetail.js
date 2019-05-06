@@ -8,18 +8,9 @@ Page({
         ec: {
             lazyLoad: true // 延迟加载
         },
-        pickMethodsType:true,
-        houseList:[],
-        showOrHide:true,
-        keyword:'',
-        xqname:'',
-        productHref:'103102793936',
+        productHref:'',
         array: ['链家', '我爱我家', '豪世华邦'],
-        postArr:['lianjia','5i5j','hshb'],
-        postArrCity:['hz','nb','sh','su','qd','nj','gz','sz'],
-        cityarray:['杭州','宁波','上海','苏州','青岛','南京','广州','深圳'],
-        cityindex:0,
-        /*objectArray: [
+        objectArray: [
             {
                 id: 0,
                 name: '链家'
@@ -32,7 +23,7 @@ Page({
                 id: 2,
                 name: '豪世华邦'
             }
-        ],*/
+        ],
         index: 0,
         imgUrls: [
             '../../image/banner.png',
@@ -85,61 +76,6 @@ Page({
         })
     },
 
-
-
-
-
-
-
-
-
-
-    NoDetail: function (){
-        wx.navigateTo({
-            url: '../nodetail/nodetail'
-        })
-    },
-    goEcharts(e){
-        var item = e.currentTarget.dataset.item
-        wx.navigateTo({
-            url: '../echartsdetail/echartsdetail?item='+JSON.stringify(item)
-        })
-        console.log (item)
-    },
-    pickMethodsNo(){
-
-        this.setData({
-            showOrHide: true,
-            pickMethodsType:true
-        })
-    },
-    pickMethodsKeyword(){
-        this.setData({
-            showOrHide: false,
-            pickMethodsType:false
-        })
-    },
-    bindPickerChangeCity(e) {
-        console.log('picker发送选择改变，携带值为', e.detail.value)
-        this.setData({
-            cityindex: e.detail.value
-        })
-    },
-
-    //获取用户输入的用户名
-    keywordInput:function(e)
-    {
-        this.setData({
-            keyword: e.detail.value
-        })
-    },
-    //获取用户输入的用户名
-    xqnameInput:function(e)
-    {
-        this.setData({
-            xqname: e.detail.value
-        })
-    },
     //获取用户输入的用户名
     productHrefInput:function(e)
     {
@@ -158,7 +94,68 @@ Page({
             index: e.detail.value
         })
     },
-    //////////////////----------------------//////////
+    queryPrice:function (e){
+        wx.showLoading({
+            title: '加载中',
+        })
+        let that = this
+        this.echartsComponnet = this.selectComponent('#mychart');
+        console.log(this.data.productHref)
+        wx.request({
+            url: 'https://www.peapocket.com/historyprice',
+            data: { href: 'https://hz.lianjia.com/ershoufang/103103768762.html' },
+            method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },// 设置请求的 header
+            success: function (res) {
+                if (res.statusCode == 200) {
+                    wx.hideLoading()
+                    console.log(res.data)
+                    let jsondata = res.data;
+                    var arrprice = []
+                    for(var key in jsondata){
+                        if(key.substring(0,4) == 'time'){
+                            var objprice = {}
+
+                            var keydate = key.substring(4,key.length)
+                            objprice['date'] = jsondata[key]
+                            objprice[key] = jsondata[key]
+                            objprice['squarePrice'] =jsondata['squarePrice'+keydate]
+                            objprice['totalPrice'] =jsondata['totalPrice'+keydate]
+                            arrprice.push(objprice)
+                        }
+
+                    }
+                    arrprice.sort(function (a,b) {
+                        return new Date(a.date).getTime() - new Date(b.date).getTime()
+                    })
+                    var dateArr = []
+                    var totalPriceArr = []
+                    var squarePriceArr = []
+                    var info = {}
+                    for(let item of arrprice){
+                        dateArr.push(item.date)
+                        totalPriceArr.push(item.totalPrice)
+                        squarePriceArr.push(item.squarePrice)
+                    }
+                   /// info = {"time":dateArr,"totalprice":totalPriceArr,"squareprice":squarePriceArr}
+
+
+
+                    that.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
+                } else {
+                    console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
+                }
+            },
+            fail: function () {
+                console.log("index.js wx.request CheckCallUser fail");
+            },
+            complete: function () {
+                // complete
+            }
+        })
+    },
     formatEchartsData(jsondata){
         var arrprice = []
         for(var key in jsondata){
@@ -189,120 +186,6 @@ Page({
         var info = {"time":dateArr,"totalprice":totalPriceArr,"squareprice":squarePriceArr}
         return info
     },
-    queryPriceKeyword(e){
-        console.log(this.data.xqname)
-        console.log(this.data.keyword)
-        if(this.data.xqname==""  || this.data.keyword==""){
-            //lert("为了更加精确，请输入关键字和小区！")
-            wx.showToast({
-                title: '为了更加精确，请输入关键字和小区！',
-                icon:'none',
-                duration: 3000
-            })
-            return;
-        }
-        console.log(this.data.postArrCity[this.data.cityindex])
-        wx.showLoading({
-            title: '加载中',
-        })
-        let that = this
-        //this.echartsComponnet = this.selectComponent('#mychart');
-
-        wx.request({
-            url: 'https://www.peapocket.com/minihistoryprice',
-            data: { methods:'methodsKeyword',city: this.data.postArrCity[this.data.cityindex] ,xqname:this.data.xqname,keyword:this.data.keyword},
-            method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-            header: {
-                'content-type': 'application/x-www-form-urlencoded'
-            },// 设置请求的 header
-            success: function (res) {
-                if (res.statusCode == 200) {
-                    wx.hideLoading()
-                    console.log(res.data)
-                    let jsondata = res.data;
-                    if(jsondata.isExist == 0){
-                        wx.showToast({
-                            title: '暂未收录相关信息',
-                            icon:'none',
-                            duration: 3000
-                        })
-                        return
-                    }
-                    that.setData({
-                        houseList:res.data.infos
-                    })
-
-                   /* dateArr= info.time
-                    totalPriceArr = info.totalprice
-                    squarePriceArr = info.squareprice*/
-                    //that.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
-                } else {
-                    console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
-                }
-            },
-            fail: function () {
-                console.log("index.js wx.request CheckCallUser fail");
-            },
-            complete: function () {
-                // complete
-            }
-        })
-    },
-    queryPrice:function (e){
-        if(this.data.houseNo=="" ){
-            wx.showToast({
-                title: '请您输入房源编号！',
-                icon:'none',
-                duration: 3000
-            })
-            return;
-        }
-        wx.showLoading({
-            title: '加载中',
-        })
-        let that = this
-        this.echartsComponnet = this.selectComponent('#mychart');
-
-        wx.request({
-            url: 'https://www.peapocket.com/minihistoryprice',
-            data: { houseNo: this.data.productHref ,houseFrom:this.data.postArr[this.data.index],methods:"methodsNo"},
-            method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-            header: {
-                'content-type': 'application/x-www-form-urlencoded'
-            },// 设置请求的 header
-            success: function (res) {
-                if (res.statusCode == 200) {
-                    wx.hideLoading()
-                    //console.log(res.data)
-                    let jsondata = res.data;
-                    if(jsondata.isExist == 0){
-                        wx.showToast({
-                            title: '暂未收录相关信息',
-                            icon:'none',
-                            duration: 3000
-                        })
-                        return
-                    }
-
-                    var info = that.formatEchartsData(jsondata);
-                    var dateArr= info.time
-                    var totalPriceArr = info.totalprice
-                    var squarePriceArr = info.squareprice
-                    //console.log(info)
-                    that.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
-                } else {
-                    console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
-                }
-            },
-            fail: function () {
-                console.log("index.js wx.request CheckCallUser fail");
-            },
-            complete: function () {
-                // complete
-            }
-        })
-    },
-
     getOption: function (xData,yDataTotal,yDataSquare) {
 
         // 指定图表的配置项和数据
@@ -444,6 +327,17 @@ Page({
         });
     },
 
+    onLoad: function (options){
+        var houseInfo = JSON.parse(options.item);
+        this.echartsComponnet = this.selectComponent('#mychart');
+        var info =  this.formatEchartsData(houseInfo)
 
+        console.log
+        var dateArr= info.time
+        var totalPriceArr = info.totalprice
+        var squarePriceArr = info.squareprice
+        this.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
+        var that = this;
+    },
 })
 
