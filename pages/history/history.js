@@ -8,6 +8,9 @@ Page({
         ec: {
             lazyLoad: true // 延迟加载
         },
+        houseInfo:'',
+        priceTipView:true,
+
         pickMethodsType:true,
         houseList:[],
         showOrHide:true,
@@ -93,7 +96,62 @@ Page({
 
 
 
+    priceTipTap(){
+        var sourceNo = '';
+        var sourceFrom = ''
 
+        var openid = wx.getStorageSync('openid');
+        var href = this.data.houseInfo.href;
+        if(href.indexOf('lianjia') != -1){
+            sourceNo = 'lianjiaNo'
+            sourceFrom = 'lianjia'
+        }else if(href.indexOf('5i5j') != -1){
+            sourceNo = 'wawjNo'
+            sourceFrom = '5i5j'
+        }else if(href.indexOf('hshb') != -1){
+            sourceNo = 'hshbNo'
+            sourceFrom = 'hshb'
+        }else{
+            return;
+        }
+        //编号 和 来源
+        var No = this.data.houseInfo[sourceNo];
+        var source = sourceFrom;
+
+        var arr = []
+        for(var key in this.data.houseInfo) {
+            if (key.substring(0, 5) == 'total') {
+                var objprice = {}
+
+                var keydate = key.substring(5, key.length)
+                arr.push(keydate)
+            }
+        }
+        arr.sort(function (a,b) {
+            return new Date(b).getTime() -  new Date(a).getTime(a); //从大到小
+        })
+        var lastUpdateKey = 'totalPrice'+arr[0]
+        //最近更新的总价
+        var lastUpdatePrice = this.data.houseInfo[lastUpdateKey]
+        wx.request({
+            url: 'https://www.peapocket.com/pricetip',
+            //url: 'https://api.weixin.qq.com/sns/jscode2session?appid='+this.globalData.appid+'&secret='+this.globalData.secret+'&js_code='+res.code+'&grant_type=authorization_code',
+            data: {
+                openid: openid,
+                href:href,
+                No:No,
+                source:source,
+                lastUpdatePrice:lastUpdatePrice
+            },
+
+            success(v){
+                //var openid = v.data.openid;
+
+                console.log(v)
+            }
+        })
+
+    },
     NoDetail: function (){
         wx.navigateTo({
             url: '../nodetail/nodetail'
@@ -283,13 +341,16 @@ Page({
                         })
                         return
                     }
-
+                    that.houseInfo= jsondata;
                     var info = that.formatEchartsData(jsondata);
                     var dateArr= info.time
                     var totalPriceArr = info.totalprice
                     var squarePriceArr = info.squareprice
                     //console.log(info)
                     that.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
+                    that.setData({
+                        priceTipView:false
+                    })
                 } else {
                     console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
                 }
@@ -309,6 +370,41 @@ Page({
         let option = {
             tooltip: {
                 trigger: 'axis',
+                position: function (point, params, dom, rect, size) {
+                    // 鼠标坐标和提示框位置的参考坐标系是：以外层div的左上角那一点为原点，x轴向右，y轴向下
+                    // 提示框位置
+                    var x = 0; // x坐标位置
+                    var y = 0; // y坐标位置
+
+                    // 当前鼠标位置
+                    var pointX = point[0];
+                    var pointY = point[1];
+
+                    // 外层div大小
+                    // var viewWidth = size.viewSize[0];
+                    // var viewHeight = size.viewSize[1];
+
+                    // 提示框大小
+                    var boxWidth = size.contentSize[0];
+                    var boxHeight = size.contentSize[1];
+// boxWidth > pointX 说明鼠标左边放不下提示框
+                    if (boxWidth > pointX) {
+                        x = 5;
+                    } else { // 左边放的下
+                        x = pointX - boxWidth;
+                    }
+
+                    // boxHeight > pointY 说明鼠标上边放不下提示框
+                    if (boxHeight > pointY) {
+                        y = 5;
+                    } else { // 上边放得下
+                        y = pointY - boxHeight;
+                    }
+
+                    return [x, y];
+                },
+
+
                /* axisPointer: {
                     type: 'cross',
                     crossStyle: {
@@ -371,12 +467,12 @@ Page({
                         "show":false
                     },
                     type: 'value',
-                    //name: '总价/万元',
+                    name: '总价/万元',
                     min: 0,
                     max: 1000,
                     //interval: 50,
                     axisLabel: {
-                        show:false,
+                        show:true,
                         formatter: '{value}'
                     }
                 },
@@ -443,6 +539,10 @@ Page({
             return Chart;
         });
     },
+    onLoad(){
+        console.log('hahah')
+        console.log(app.globalData.userInfo)
+    }
 
 
 })
