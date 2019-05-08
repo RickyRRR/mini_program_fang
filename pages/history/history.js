@@ -243,7 +243,7 @@ Page({
 
         }
         arrprice.sort(function (a,b) {
-            return new Date(a.date).getTime() - new Date(b.date).getTime()
+            return Number(a)- Number(b)
         })
         var dateArr = []
         var totalPriceArr = []
