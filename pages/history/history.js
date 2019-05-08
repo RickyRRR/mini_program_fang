@@ -148,7 +148,8 @@ Page({
                 source:source,
                 registerPrice:lastUpdatePrice,
                 title:title,
-                name:name
+                name:name,
+                type:'setTip'
             },
             header: {
                 'content-type': 'application/x-www-form-urlencoded'
@@ -234,7 +235,7 @@ Page({
                 var objprice = {}
 
                 var keydate = key.substring(4,key.length)
-                objprice['date'] = jsondata[key]
+                objprice['date'] = jsondata[key]   //2019-03-01
                 objprice[key] = jsondata[key]
                 objprice['squarePrice'] =jsondata['squarePrice'+keydate]
                 objprice['totalPrice'] =jsondata['totalPrice'+keydate]
@@ -243,7 +244,7 @@ Page({
 
         }
         arrprice.sort(function (a,b) {
-            return Number(a)- Number(b)
+            return new Date(a.date).getTime()-new Date(b.date).getTime()
         })
         var dateArr = []
         var totalPriceArr = []

@@ -9,7 +9,8 @@
 
     "pages/abouthouse/abouthouse" ,
     "pages/nodetail/nodetail",
-    "pages/echartsdetail/echartsdetail"
+    "pages/echartsdetail/echartsdetail",
+    "pages/pricetip/pricetip"
   ],
   "tabBar": {
     "color": "#333333",
@@ -17,18 +18,18 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/history/history",
         "iconPath": "image/icon1.png",
         "selectedIconPath": "image/icon1active.png",
         "text": "首页",
         "navigationBarTitleText": "首页"
       },
       {
-        "pagePath": "pages/abouthouse/abouthouse",
+        "pagePath": "pages/pricetip/pricetip",
         "iconPath": "image/icon2.png",
         "selectedIconPath": "image/icon2active.png",
-        "text": "小区信息",
-        "navigationBarTitleText": "小区信息"
+        "text": "提醒列表",
+        "navigationBarTitleText": "提醒列表"
       },
       {
         "pagePath": "pages/third/third",
