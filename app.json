@@ -1,11 +1,15 @@
 {
   "pages": [
+    "pages/history/history",
     "pages/third/third",
     "pages/index/index",
     "pages/second/second",
     "pages/fourth/fourth",
     "pages/tldetail/tldetail",
-    "pages/history/history"
+
+    "pages/abouthouse/abouthouse" ,
+    "pages/nodetail/nodetail",
+    "pages/echartsdetail/echartsdetail"
   ],
   "tabBar": {
     "color": "#333333",
@@ -20,11 +24,11 @@
         "navigationBarTitleText": "首页"
       },
       {
-        "pagePath": "pages/second/second",
+        "pagePath": "pages/abouthouse/abouthouse",
         "iconPath": "image/icon2.png",
         "selectedIconPath": "image/icon2active.png",
-        "text": "演出阵容",
-        "navigationBarTitleText": "演出阵容"
+        "text": "小区信息",
+        "navigationBarTitleText": "小区信息"
       },
       {
         "pagePath": "pages/third/third",
