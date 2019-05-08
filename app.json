@@ -13,7 +13,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/history/history",
+        "pagePath": "pages/index/index",
         "iconPath": "image/icon1.png",
         "selectedIconPath": "image/icon1active.png",
         "text": "首页",
