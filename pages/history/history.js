@@ -120,29 +120,39 @@ Page({
 
         var arr = []
         for(var key in this.data.houseInfo) {
-            if (key.substring(0, 5) == 'total') {
+            if (key.substring(0, 10) == 'totalPrice') {
                 var objprice = {}
 
-                var keydate = key.substring(5, key.length)
+                var keydate = key.substring(10, key.length)
                 arr.push(keydate)
             }
         }
         arr.sort(function (a,b) {
-            return new Date(b).getTime() -  new Date(a).getTime(a); //从大到小
+            return Number(b) -   Number(a); //从大到小
         })
         var lastUpdateKey = 'totalPrice'+arr[0]
         //最近更新的总价
         var lastUpdatePrice = this.data.houseInfo[lastUpdateKey]
+        var title = this.data.houseInfo.title;
+        var name = this.data.houseInfo.name;
+        console.log(No+source+lastUpdatePrice+openid+href)
+
         wx.request({
-            url: 'https://www.peapocket.com/pricetip',
+            url: 'https://www.peapocket.com/minipricetip',
             //url: 'https://api.weixin.qq.com/sns/jscode2session?appid='+this.globalData.appid+'&secret='+this.globalData.secret+'&js_code='+res.code+'&grant_type=authorization_code',
+            method:'POST',
             data: {
                 openid: openid,
                 href:href,
                 No:No,
                 source:source,
-                lastUpdatePrice:lastUpdatePrice
+                registerPrice:lastUpdatePrice,
+                title:title,
+                name:name
             },
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },// 设置请求的 header
 
             success(v){
                 //var openid = v.data.openid;
@@ -341,7 +351,10 @@ Page({
                         })
                         return
                     }
-                    that.houseInfo= jsondata;
+                    that.setData({
+                        houseInfo:jsondata
+                    })
+
                     var info = that.formatEchartsData(jsondata);
                     var dateArr= info.time
                     var totalPriceArr = info.totalprice

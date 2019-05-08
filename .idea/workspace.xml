@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b3f8fff-7c8f-4e3d-b68c-27f69ed73958" name="Default" comment="">
+    <list default="true" id="6b3f8fff-7c8f-4e3d-b68c-27f69ed73958" name="Default" comment="降价提醒 openid获取 &#10;office">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/echartsdetail/echartsdetail.js" afterPath="$PROJECT_DIR$/pages/echartsdetail/echartsdetail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/history/history.js" afterPath="$PROJECT_DIR$/pages/history/history.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/history/history.wxml" afterPath="$PROJECT_DIR$/pages/history/history.wxml" />
     </list>
@@ -83,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.wxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.wxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#text#0;n#view#1;n#view#0;n#!!top" expanded="true" />
@@ -130,6 +128,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="history.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/history/history.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -156,9 +164,9 @@
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/pages/echartsdetail/echartsdetail.wxml" />
         <option value="$PROJECT_DIR$/pages/echartsdetail/echartsdetail.js" />
-        <option value="$PROJECT_DIR$/pages/history/history.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/pages/history/history.wxml" />
+        <option value="$PROJECT_DIR$/pages/history/history.js" />
       </list>
     </option>
   </component>
@@ -588,7 +596,7 @@
       <workItem from="1556968609920" duration="595000" />
       <workItem from="1557025655291" duration="4231000" />
       <workItem from="1557104210793" duration="14447000" />
-      <workItem from="1557191574947" duration="17090000" />
+      <workItem from="1557191574947" duration="24173000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js">
       <created>1556969085507</created>
@@ -632,16 +640,23 @@
       <option name="project" value="LOCAL" />
       <updated>1557133081231</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="降价提醒 openid获取 &#10;office">
+      <created>1557219933167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557219933167</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48528000" />
+    <option name="totallyTimeSpent" value="55611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-166" width="1936" height="1096" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -670,7 +685,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/RickyRRR/mini_program_fang&#10;&#10;# Conflicts:&#10;#&#9;.idea/watcherTasks.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;pages/history/history.js" />
     <MESSAGE value="编号说明 history样式 &#10;office" />
     <MESSAGE value="关键字查询 &#10;office" />
-    <option name="LAST_COMMIT_MESSAGE" value="关键字查询 &#10;office" />
+    <MESSAGE value="降价提醒 openid获取 &#10;office" />
+    <option name="LAST_COMMIT_MESSAGE" value="降价提醒 openid获取 &#10;office" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1132,18 +1148,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/history/history.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="351" column="42" lean-forward="true" selection-start-line="351" selection-start-column="42" selection-end-line="351" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/history/history.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#view#1;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#text#0;n#view#1;n#view#0;n#!!top" expanded="true" />
@@ -1172,6 +1180,14 @@
             <element signature="n#style#0;n#view#4;n#view#3;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#view#4;n#view#3;n#view#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/history/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
