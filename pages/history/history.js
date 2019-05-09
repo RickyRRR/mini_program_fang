@@ -96,7 +96,9 @@ Page({
 
 
 
-    priceTipTap(){
+    priceTipSubmit(event){
+        var formId = event.detail.formId;
+        console.log('formId'+formId)
         var sourceNo = '';
         var sourceFrom = ''
 
@@ -137,11 +139,13 @@ Page({
         var name = this.data.houseInfo.name;
         console.log(No+source+lastUpdatePrice+openid+href)
 
+
         wx.request({
             url: 'https://www.peapocket.com/minipricetip',
             //url: 'https://api.weixin.qq.com/sns/jscode2session?appid='+this.globalData.appid+'&secret='+this.globalData.secret+'&js_code='+res.code+'&grant_type=authorization_code',
             method:'POST',
             data: {
+                formId:formId,
                 openid: openid,
                 href:href,
                 No:No,
