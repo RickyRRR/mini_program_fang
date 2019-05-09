@@ -16,16 +16,26 @@
         </swiper>
     </view>
 
+     <!--在业务页面wxml中引用wxs-->
+    <wxs module="astFilter" src="../../filter/tipFilter.wxs"></wxs>
     <view>
         <block wx:for = "{{tipList}}"  wx:for-item="item" wx:for-index="tipIndex" >
             <view data-item="{{item}}"  class='tipItem'>
                 <view>{{item.title}}</view>
-                <view><text>小区：{{item.name}}</text>
-                    <text>/{{item.registerPrice}}</text></view>
-
+                <view><text>小区：{{item.xqname}}</text>
+                    <text>{{item.registerPrice}}</text></view>
+                <view>
+                    {{astFilter.isTipFormat(item.isTip)}}
+                    {{astFilter.isInvalidFormat(item.updateTime)}}
+                </view>
+                <view class="deleteIcon">删除</view>
             </view>
+
         </block>
     </view>
+
+
+
    <!-- <view class = "navbar">
         <cover-image class = "nav nav1" src = "../../image/nav1.png"></cover-image>
         <cover-image class = "nav nav2" src = "../../image/nav2.png"></cover-image>

@@ -250,3 +250,14 @@ swiper {
 	text-align  : justify;
 	line-height : 27rpx;
 }
+
+.tipItem{
+	padding:15px;
+	/*positioin:relative;*/
+	width:89%
+}
+.deleteIcon{
+	position:absolute;
+	right:0%;
+	top:30%
+}

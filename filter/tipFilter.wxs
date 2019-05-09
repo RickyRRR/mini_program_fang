@@ -1,0 +1,20 @@
+var myDate = getDate();
+module.exports = {
+    isTipFormat: function (isTip) {
+        if(isTip==0){
+            return '生效中'
+        }else if(isTip ==1){
+            return '已提醒'
+        }
+        
+    },
+    isInvalidFormat:function (updateTime) {
+        //var date = new Date(updateTime.create.time());
+        myDate.setTime(updateTime.time);
+        myDate.setHours(updateTime.hours);
+        myDate.setMinutes(updateTime.minutes);
+        myDate.setSeconds(updateTime.seconds);
+        return myDate.getTime();
+    }
+    
+}
