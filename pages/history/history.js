@@ -14,8 +14,8 @@ Page({
         pickMethodsType:true,
         houseList:[],
         showOrHide:true,
-        keyword:'',
-        xqname:'',
+        keyword:'朝南',
+        xqname:'金色江南',
         productHref:'103102793936',
         array: ['链家', '我爱我家', '豪世华邦'],
         postArr:['lianjia','5i5j','hshb'],
@@ -161,7 +161,11 @@ Page({
 
             success(v){
                 //var openid = v.data.openid;
-
+                wx.showToast({
+                    title: '设置成功！',
+                    icon:'none',
+                    duration: 3000
+                })
                 console.log(v)
             }
         })

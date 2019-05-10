@@ -2,7 +2,7 @@ var myDate = getDate();
 module.exports = {
     isTipFormat: function (isTip) {
         if(isTip==0){
-            return '生效中'
+            return ''
         }else if(isTip ==1){
             return '已提醒'
         }
@@ -14,7 +14,13 @@ module.exports = {
         myDate.setHours(updateTime.hours);
         myDate.setMinutes(updateTime.minutes);
         myDate.setSeconds(updateTime.seconds);
-        return myDate.getTime();
+        var nowStamp = getDate().getTime();
+        var regStamp = myDate.getTime();
+        var gap = 7*24*60*60*1000; //毫秒
+        if((nowStamp - regStamp) > gap){
+            return "已过期"
+        }
+
     }
     
 }

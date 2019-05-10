@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1184973 */
+  src: url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.eot');
+  src: url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1184973_8dcwjdltdir.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_affiliations_li:before {
+  content: "\eb8f";
+}
+
+.icon-icon_compile:before {
+  content: "\eb93";
+}
+
+.icon-icon_cloud_history:before {
+  content: "\eb92";
+}
+
+.icon-icon_delete:before {
+  content: "\eb94";
+}
+
+.icon-icon_cspace:before {
+  content: "\eb95";
+}
+
+.icon-icon_im_more:before {
+  content: "\eb96";
+}
+
+.icon-icon_more:before {
+  content: "\eb98";
+}
+
+.icon-icon_left:before {
+  content: "\eb99";
+}
+
+.icon-icon_next_arrow:before {
+  content: "\eb9a";
+}
+
+.icon-icon_notice:before {
+  content: "\eb9b";
+}
+
+.icon-icon_inform_fill:before {
+  content: "\eba8";
+}
+

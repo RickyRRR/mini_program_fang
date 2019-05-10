@@ -18,17 +18,38 @@
 
      <!--在业务页面wxml中引用wxs-->
     <wxs module="astFilter" src="../../filter/tipFilter.wxs"></wxs>
+    <view class="headTip">
+        <text class=" iconfont icon-icon_notice" style=""></text>
+        tip:由于小程序的限制，最长只能设置未来7天的提醒，欢迎您回来对超过时效的房源再次设置提醒~
+    </view>
     <view>
         <block wx:for = "{{tipList}}"  wx:for-item="item" wx:for-index="tipIndex" >
-            <view data-item="{{item}}"  class='tipItem'>
-                <view>{{item.title}}</view>
-                <view><text>小区：{{item.xqname}}</text>
-                    <text>{{item.registerPrice}}</text></view>
-                <view>
+            <view data-item="{{item}}"  class='tipItem' bindlongpress='longPressDel'>
+                <text class=" iconfont  icon-icon_affiliations_li " style=""></text>
+                <view bindtap="EchartDetail" data-no="{{item.No}}" data-source="{{item.source}}">
+                    {{item.title}}
+                    <text style="font-size:13px;color:darkgreen">(价格曲线)</text>
+                </view>
+                <view class="houseInfo">
+                    <text>小区：{{item.xqname}}</text>
+                    /
+                    <text>{{item.registerPrice}}万元</text>
+                </view>
+                <view class="tipStatus">
                     {{astFilter.isTipFormat(item.isTip)}}
                     {{astFilter.isInvalidFormat(item.updateTime)}}
                 </view>
-                <view class="deleteIcon">删除</view>
+                <text class=" iconfont  icon-icon_next_arrow " style="color:darkgreen;position: absolute;top:55%;right:0"></text>
+                <!--<view class="deleteIcon">
+
+                    <icon bindtap="deleteTip" data-item="{{item}}" type="clear" size="30"  />
+                </view>-->
+                <form bindsubmit="updatepriceTipSubmit" report-submit='true' data-item="{{item}}" class="tipForm">
+                    <button  formType="submit" class="iconfont icon-icon_notice tipButton" style='font-size:20px;color:darkgreen'><view style="font-size:13px">降价提醒</view></button>
+                    <!--<button formType="submit" class="tipButton">降价提醒</button>-->
+                </form>
+
+
             </view>
 
         </block>

@@ -8,6 +8,7 @@ Page({
         ec: {
             lazyLoad: true // 延迟加载
         },
+        houseInfo:{},
         productHref:'',
         array: ['链家', '我爱我家', '豪世华邦'],
         objectArray: [
@@ -76,23 +77,89 @@ Page({
         })
     },
 
-    //获取用户输入的用户名
-    productHrefInput:function(e)
-    {
-        this.setData({
-            productHref: e.detail.value
+
+
+
+
+
+
+
+
+
+    priceTipSubmit(event){
+        var formId = event.detail.formId;
+
+        var sourceNo = '';
+        var sourceFrom = ''
+
+        var openid = wx.getStorageSync('openid');
+        var href = this.data.houseInfo.href;
+        if(href.indexOf('lianjia') != -1){
+            sourceNo = 'lianjiaNo'
+            sourceFrom = 'lianjia'
+        }else if(href.indexOf('5i5j') != -1){
+            sourceNo = 'wawjNo'
+            sourceFrom = '5i5j'
+        }else if(href.indexOf('hshb') != -1){
+            sourceNo = 'hshbNo'
+            sourceFrom = 'hshb'
+        }else{
+            return;
+        }
+        //编号 和 来源
+        var No = this.data.houseInfo[sourceNo];
+        var source = sourceFrom;
+
+        var arr = []
+        for(var key in this.data.houseInfo) {
+            if (key.substring(0, 10) == 'totalPrice') {
+                var objprice = {}
+
+                var keydate = key.substring(10, key.length)
+                arr.push(keydate)
+            }
+        }
+        arr.sort(function (a,b) {
+            return Number(b) -   Number(a); //从大到小
         })
-    },
-    bindKeyInput(e) {
-        this.setData({
-            inputValue: e.detail.value
+        var lastUpdateKey = 'totalPrice'+arr[0]
+        //最近更新的总价
+        var lastUpdatePrice = this.data.houseInfo[lastUpdateKey]
+        var title = this.data.houseInfo.title;
+        var name = this.data.houseInfo.name;
+        console.log(No+source+lastUpdatePrice+openid+href)
+
+
+        wx.request({
+            url: 'https://www.peapocket.com/minipricetip',
+            //url: 'https://api.weixin.qq.com/sns/jscode2session?appid='+this.globalData.appid+'&secret='+this.globalData.secret+'&js_code='+res.code+'&grant_type=authorization_code',
+            method:'POST',
+            data: {
+                formId:formId,
+                openid: openid,
+                href:href,
+                No:No,
+                source:source,
+                registerPrice:lastUpdatePrice,
+                title:title,
+                name:name,
+                type:'setTip'
+            },
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },// 设置请求的 header
+
+            success(v){
+                //var openid = v.data.openid;
+                wx.showToast({
+                    title: '设置成功！',
+                    icon:'none',
+                    duration: 3000
+                })
+                console.log(v)
+            }
         })
-    },
-    bindPickerChange(e) {
-        console.log('picker发送选择改变，携带值为', e.detail.value)
-        this.setData({
-            index: e.detail.value
-        })
+
     },
     queryPrice:function (e){
         wx.showLoading({
@@ -363,6 +430,9 @@ Page({
 
     onLoad: function (options){
         var houseInfo = JSON.parse(options.item);
+        this.setData({
+            houseInfo:houseInfo
+        })
         this.echartsComponnet = this.selectComponent('#mychart');
         var info =  this.formatEchartsData(houseInfo)
 

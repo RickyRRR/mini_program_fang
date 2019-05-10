@@ -253,11 +253,38 @@ swiper {
 
 .tipItem{
 	padding:15px;
-	/*positioin:relative;*/
-	width:89%
+	position:relative;
+	width:75%
 }
 .deleteIcon{
 	position:absolute;
 	right:0%;
 	top:30%
+}
+.houseInfo{
+	font-size:14px;
+}
+.tipStatus{
+	font-size:14px;
+}
+.tipButton{
+	/*position:absolute;*/
+	line-height:20px;
+	padding:2px 0;
+	width:60px;
+
+}
+.tipForm{
+	position: absolute;
+	right:-19%;
+	top:40%
+}
+.headTip{
+	font-size:14px;
+	padding:15px;
+	background-color:#cccc;
+	color:darkorange;
+}
+.tipButton::after {
+	border: none;
 }

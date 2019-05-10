@@ -28,17 +28,18 @@
 
 
     <view style="padding:15px" class="NoQuery"  hidden="{{!showOrHide}}">
-        <view class="section" style="font-weight: bold;">
+        <view class="section" style="">
 
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="font-weight: bold;">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="">
                 <view class="picker">
                     数据来源： {{array[index]}}
+                    <text class="iconfont icon-icon_next_arrow"style="color:darkgreen;float:right" ></text>
                 </view>
             </picker>
 
         </view>
         <view class="section" style="margin:15px 0">
-            <view class="section__title" style="font-weight: bold;">房源编号
+            <view class="section__title" style="">房源编号
                 <text bindtap="NoDetail" style="font-weight: normal;color:green;font-size:14px">（编号说明）</text>
             </view>
             <input bindinput="productHrefInput" placeholder="输入房源编号" value="103102793936"
@@ -72,34 +73,31 @@
 
 
     <view style="padding:15px"  class="keywordQuery"  hidden="{{showOrHide}}">
-        <view class="section" style="font-weight: bold;">
+        <view class="section" style="background:#ccc;height:40px;line-height:40px;color:darkgreen">
             <view>
-                数据来源：链家
+                数据来源：链家  <text class="iconfont icon-icon_cloud_history " style="color:darkgreen;" ></text>
             </view>
-            <!--<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="font-weight: bold;">
-                <view class="picker">
-                    数据来源：{{array[index]}}
-                </view>
-            </picker>-->
+
 
         </view>
-        <view class="section" style="font-weight: bold;margin-top:15px">
+        <view class="section" style="margin-top:15px">
 
-            <picker bindchange="bindPickerChangeCity" value="{{cityindex}}" range="{{cityarray}}" style="font-weight: bold;">
+            <picker bindchange="bindPickerChangeCity" value="{{cityindex}}" range="{{cityarray}}" style="">
                 <view class="picker">
                     城市：{{cityarray[cityindex]}}
+                    <text class="iconfont icon-icon_next_arrow " style="color:darkgreen;float:right" ></text>
                 </view>
             </picker>
 
         </view>
         <view class="section" style="margin:15px 0">
-            <view class="section__title" style="font-weight: bold;">小区名称</view>
-            <input bindinput="xqnameInput" placeholder="输入小区名称" value=""
+            <view class="section__title" style="">小区名称</view>
+            <input bindinput="xqnameInput" placeholder="输入小区名称" value="金色江南"
                    style="height: 50px;padding-left: 10px;border:1px solid #c7c7c7;margin-top:5px;"/>
         </view>
         <view class="section" style="margin:15px 0">
-            <view class="section__title" style="font-weight: bold;">关键字(标题)</view>
-            <input bindinput="keywordInput" placeholder="" value=""
+            <view class="section__title" style="">关键字(标题)</view>
+            <input bindinput="keywordInput" placeholder="" value="朝南"
                    style="height: 50px;padding-left: 10px;border:1px solid #c7c7c7;margin-top:5px;"/>
         </view>
         <view style="text-align: center">
@@ -110,10 +108,11 @@
 
         <block wx:for = "{{houseList}}"  wx:for-item="item" wx:for-index="houseIndex" >
             <view data-item="{{item}}" bindtap="goEcharts" class='houseItem'>
-                <view>{{item.title}}</view>
-               <view><text>小区：{{item.name}}</text>
+                <text class=" iconfont  icon-icon_affiliations_li " style="color:darkgreen"></text>
+                <view style="font-size: 18px;">{{item.title}}<text style="font-size:13px;color:darkgreen">(价格曲线)</text></view>
+               <view style="font-size: 14px;"><text>小区：{{item.name}}</text>
                    <text>/{{item.area}}</text></view>
-
+                <text class=" iconfont  icon-icon_next_arrow " style="position: absolute;right:2%;top:50%;color:darkgreen"></text>
             </view>
         </block>
     </view>
