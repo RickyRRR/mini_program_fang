@@ -33,12 +33,14 @@
                 <view class="houseInfo">
                     <text>小区：{{item.xqname}}</text>
                     /
-                    <text>{{item.registerPrice}}万元</text>
+                    <text>{{item.registerPrice}}万元\n</text>
+                    <text>编号：{{item.No}}</text><text>/{{astFilter.sourceFrom(item.source)}}</text>
                 </view>
                 <view class="tipStatus">
                     {{astFilter.isTipFormat(item.isTip)}}
                     {{astFilter.isInvalidFormat(item.updateTime)}}
                 </view>
+
                 <text class=" iconfont  icon-icon_next_arrow " style="color:darkgreen;position: absolute;top:55%;right:0"></text>
                 <!--<view class="deleteIcon">
 
@@ -51,6 +53,7 @@
 
 
             </view>
+            <view style="height:8px;background-color: #cccccc"></view>
 
         </block>
     </view>

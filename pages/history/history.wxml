@@ -106,12 +106,17 @@
             </button>
         </view>
 
+
+        <wxs module="astFilter" src="../../filter/tipFilter.wxs"></wxs>
         <block wx:for = "{{houseList}}"  wx:for-item="item" wx:for-index="houseIndex" >
             <view data-item="{{item}}" bindtap="goEcharts" class='houseItem'>
                 <text class=" iconfont  icon-icon_affiliations_li " style="color:darkgreen"></text>
                 <view style="font-size: 18px;">{{item.title}}<text style="font-size:13px;color:darkgreen">(价格曲线)</text></view>
                <view style="font-size: 14px;"><text>小区：{{item.name}}</text>
-                   <text>/{{item.area}}</text></view>
+                   <text>/{{item.area}}\n</text>
+
+                   <text>编号：{{item.lianjiaNo}}/链家</text>
+               </view>
                 <text class=" iconfont  icon-icon_next_arrow " style="position: absolute;right:2%;top:50%;color:darkgreen"></text>
             </view>
         </block>

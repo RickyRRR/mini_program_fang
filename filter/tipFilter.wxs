@@ -21,6 +21,16 @@ module.exports = {
             return "已过期"
         }
 
-    }
+    },
+    sourceFrom:function (source) {
+        if(source=='lianjia'){
+            return '链家'
+        }else if(source == '5i5j'){
+            return '我爱我家'
+        }else if(source == 'hshb'){
+            return '豪世华邦'
+        }
+    },
+
     
 }
