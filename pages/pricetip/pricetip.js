@@ -175,6 +175,9 @@ Page({
 
     },
 getTipList(){
+    wx.showLoading({
+        title: '数据奔跑中...',
+    })
         var openid = wx.getStorageSync('openid');
         var that = this;
     wx.request({
@@ -187,6 +190,7 @@ getTipList(){
 
         success: function (res) {
             if (res.statusCode == 200) {
+
                 wx.hideLoading()
                 //console.log(res.data)
                 let jsondata = res.data;

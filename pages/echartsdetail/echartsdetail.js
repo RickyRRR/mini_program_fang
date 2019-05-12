@@ -161,68 +161,7 @@ Page({
         })
 
     },
-    queryPrice:function (e){
-        wx.showLoading({
-            title: '加载中',
-        })
-        let that = this
-        this.echartsComponnet = this.selectComponent('#mychart');
-        console.log(this.data.productHref)
-        wx.request({
-            url: 'https://www.peapocket.com/historyprice',
-            data: { href: 'https://hz.lianjia.com/ershoufang/103103768762.html' },
-            method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-            header: {
-                'content-type': 'application/x-www-form-urlencoded'
-            },// 设置请求的 header
-            success: function (res) {
-                if (res.statusCode == 200) {
-                    wx.hideLoading()
-                    console.log(res.data)
-                    let jsondata = res.data;
-                    var arrprice = []
-                    for(var key in jsondata){
-                        if(key.substring(0,4) == 'time'){
-                            var objprice = {}
 
-                            var keydate = key.substring(4,key.length)
-                            objprice['date'] = jsondata[key]
-                            objprice[key] = jsondata[key]
-                            objprice['squarePrice'] =jsondata['squarePrice'+keydate]
-                            objprice['totalPrice'] =jsondata['totalPrice'+keydate]
-                            arrprice.push(objprice)
-                        }
-
-                    }
-                    arrprice.sort(function (a,b) {
-                        return new Date(a.date).getTime()-new Date(b.date).getTime()
-                    })
-                    var dateArr = []
-                    var totalPriceArr = []
-                    var squarePriceArr = []
-                    var info = {}
-                    for(let item of arrprice){
-                        dateArr.push(item.date)
-                        totalPriceArr.push(item.totalPrice)
-                        squarePriceArr.push(item.squarePrice)
-                    }
-                   /// info = {"time":dateArr,"totalprice":totalPriceArr,"squareprice":squarePriceArr}
-
-
-
-                    that.init_echarts(dateArr,totalPriceArr,squarePriceArr);//初始化图表
-                } else {
-                    console.log("index.js wx.request CheckCallUser statusCode" + res.statusCode);
-                }
-            },
-            fail: function () {
-                console.log("index.js wx.request CheckCallUser fail");
-            },
-            complete: function () {
-                // complete
-            }
-        })
-    },
     formatEchartsData(jsondata){
         var arrprice = []
         for(var key in jsondata){
@@ -255,6 +194,25 @@ Page({
     },
     getOption: function (xData,yDataTotal,yDataSquare) {
 
+        let maxTotalVal=yDataTotal[0],minTotalVal=yDataTotal[0];
+        for(let i =0;i<yDataTotal.length;i++){
+            if(yDataTotal[i]>maxTotalVal){
+                maxTotalVal = yDataTotal[i];
+            }
+            if(yDataTotal[i]<minTotalVal){
+                minTotalVal = yDataTotal[i];
+            }
+        }
+
+        let maxSquareVal=yDataSquare[0],minSquareVal=yDataSquare[0];
+        for(let i =0;i<yDataSquare.length;i++){
+            if(yDataSquare[i]>maxSquareVal){
+                maxSquareVal = yDataSquare[i];
+            }
+            if(yDataSquare[i]<minSquareVal){
+                minSquareVal = yDataSquare[i];
+            }
+        }
         // 指定图表的配置项和数据
         let option = {
             tooltip: {
@@ -356,8 +314,8 @@ Page({
                     },
                     type: 'value',
                     name: '总价/万元',
-                    min: 0,
-                    max: 1000,
+                    min: Number(minTotalVal)-50,
+                    max: Number(maxTotalVal)+100,
                     //interval: 50,
                     axisLabel: {
                         show:true,
@@ -373,8 +331,8 @@ Page({
                      },*/
                     type: 'value',
                    // name: '均价/元',
-                    min: 0,
-                    max: 80000,
+                    min: Number(minSquareVal)-10000,
+                    max:  Number(maxSquareVal)+10000,
                     //interval: 5,
                     axisLabel: {
                         show:false,

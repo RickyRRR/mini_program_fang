@@ -38,8 +38,8 @@ Page({
         ],*/
         index: 0,
         imgUrls: [
-            '../../image/banner.png',
-            '../../image/banner.png',
+            '../../image/choice/5-2.jpg',
+            '../../image/choice/6-1.jpg',
             '../../image/banner.png',
         ],
         indicatorDots: true,
@@ -280,7 +280,7 @@ Page({
         }
         console.log(this.data.postArrCity[this.data.cityindex])
         wx.showLoading({
-            title: '加载中',
+            title: '数据奔跑中...',
         })
         let that = this
         //this.echartsComponnet = this.selectComponent('#mychart');
@@ -387,7 +387,25 @@ Page({
     },
 
     getOption: function (xData,yDataTotal,yDataSquare) {
+        let maxTotalVal=yDataTotal[0],minTotalVal=yDataTotal[0];
+        for(let i =0;i<yDataTotal.length;i++){
+            if(yDataTotal[i]>maxTotalVal){
+                maxTotalVal = yDataTotal[i];
+            }
+            if(yDataTotal[i]<minTotalVal){
+                minTotalVal = yDataTotal[i];
+            }
+        }
 
+        let maxSquareVal=yDataSquare[0],minSquareVal=yDataSquare[0];
+        for(let i =0;i<yDataSquare.length;i++){
+            if(yDataSquare[i]>maxSquareVal){
+                maxSquareVal = yDataSquare[i];
+            }
+            if(yDataSquare[i]<minSquareVal){
+                minSquareVal = yDataSquare[i];
+            }
+        }
         // 指定图表的配置项和数据
         let option = {
             tooltip: {
@@ -490,8 +508,8 @@ Page({
                     },
                     type: 'value',
                     name: '总价/万元',
-                    min: 0,
-                    max: 1000,
+                    min: Number(minTotalVal)-50,
+                    max: Number(maxTotalVal)+100,
                     //interval: 50,
                     axisLabel: {
                         show:true,
@@ -507,8 +525,8 @@ Page({
                      },*/
                     type: 'value',
                    // name: '均价/元',
-                    min: 0,
-                    max: 80000,
+                    min: Number(minSquareVal)-10000,
+                    max: Number(maxSquareVal)+10000,
                     //interval: 5,
                     axisLabel: {
                         show:false,

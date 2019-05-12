@@ -18,9 +18,19 @@
 
     <view style="padding:15px">
         <view>
-            1.如何获取房源编号？
+           <view style="color:darkgreen">1.如何获取房源编号？</view>
+            <view style="color:darkgreen">1.1链家编号</view>
             <view>
                 答:打开链家app,在二手房的某套房子界面，点击其他，链家编号的那串数字就是房源编号。
+            </view>
+            <view>
+                <image src = "../../image/choice/use1.png"/>
+                <image src = "../../image/choice/use2.png"/>
+            </view>
+            <view  style="color:darkgreen">1.2我爱我家编号</view>
+            <view>
+                <image src = "../../image/choice/use3.png"/>
+
             </view>
 
         </view>

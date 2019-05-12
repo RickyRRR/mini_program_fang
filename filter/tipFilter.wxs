@@ -18,7 +18,7 @@ module.exports = {
         var regStamp = myDate.getTime();
         var gap = 7*24*60*60*1000; //毫秒
         if((nowStamp - regStamp) > gap){
-            return "已过期"
+            return "已过期,点击右侧降价提醒"
         }
 
     },
@@ -31,6 +31,13 @@ module.exports = {
             return '豪世华邦'
         }
     },
+    nowPrice:function (registerPrice,nowPrice) {
 
+       if(nowPrice == 0 || (registerPrice == nowPrice)){
+           return ''
+       }else {
+           return '--->'+nowPrice + '万元'
+       }
+    },
     
 }

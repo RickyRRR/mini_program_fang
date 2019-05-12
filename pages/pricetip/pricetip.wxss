@@ -266,6 +266,7 @@ swiper {
 }
 .tipStatus{
 	font-size:14px;
+	color:darkred;
 }
 .tipButton{
 	/*position:absolute;*/
@@ -287,4 +288,7 @@ swiper {
 }
 .tipButton::after {
 	border: none;
+}
+.nowPrice{
+	color:orange;
 }
