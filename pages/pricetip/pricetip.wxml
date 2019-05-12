@@ -1,7 +1,7 @@
 
 <view class = "container">
     <!--<cover-image bindtap = "info" src = "../../image/logo.png" class = "logo"></cover-image>-->
-    <view class = "banner page-section page-section-spacing swiper">
+   <!-- <view class = "banner page-section page-section-spacing swiper">
         <swiper class = "swiper-box"
                 indicator-dots = "{{indicatorDots}}"
                 autoplay = "{{autoplay}}"
@@ -14,7 +14,7 @@
                 </swiper-item>
             </block>
         </swiper>
-    </view>
+    </view>-->
 
      <!--在业务页面wxml中引用wxs-->
     <wxs module="astFilter" src="../../filter/tipFilter.wxs"></wxs>

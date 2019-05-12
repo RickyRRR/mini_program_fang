@@ -40,7 +40,7 @@ Page({
         imgUrls: [
             '../../image/choice/5-2.jpg',
             '../../image/choice/6-1.jpg',
-            '../../image/banner.png',
+            '../../image/choice/5-2.jpg',
         ],
         indicatorDots: true,
         vertical: false,
